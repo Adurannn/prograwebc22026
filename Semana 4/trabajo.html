@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS v5.3.8 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* Seccion responsive la seccion adaptable */
+      /* 100% /12 = 8.33*/
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      /* Estilo general para las columnas */
+      [class*="col-"] {
+        color: rgb(30, 19, 86);
+      }
+      .col-1 {
+        width: 8.33%;
+        background-color: aqua;
+      }
+
+      .col-2 {
+        width: 16.66%;
+        background-color: aqua;
+      }
+
+      .col-3 {
+        width: 25%;
+        background-color: aqua;
+      }
+
+      .col-4 {
+        width: 33.33%;
+        background-color: rgb(34, 0, 255);
+      }
+
+      .col-5 {
+        width: 41.66%;
+        background-color: rgb(34, 0, 255);
+      }
+
+      .col-6 {
+        width: 50%;
+        background-color: rgb(34, 0, 255);
+      }
+
+      .col-7 {
+        width: 58.633%;
+        background-color: rgb(64, 0, 255);
+      }
+
+      .col-8 {
+        width: 66.66%;
+        background-color: rgb(98, 255, 0);
+      }
+
+      .col-9 {
+        width: 75%;
+        background-color: aqua;
+      }
+
+      .col-10 {
+        width: 83.33%;
+        background-color: rgb(217, 0, 255);
+      }
+
+      .col-11 {
+        width: 91.66%;
+        background-color: rgb(255, 0, 251);
+      }
+
+      .col-12 {
+        width: 100%;
+        background-color: rgb(255, 0, 0);
+      }
+
+      /* Estilos de la clase */
+      .rojo {
+        font-family: Arial;
+        color: red;
+        background-color: yellow;
+      }
+      .letraParrafo2 {
+        font-size: 36px;
+        font-style: normal;
+        font-family: times;
+        color: rgb(226, 241, 5);
+      }
+
+      .letraPeque {
+        font-size: 12px;
+      }
+
+      .fondoAzul {
+        background-color: blue;
+      }
+
+      .letraBlanca {
+        color: white;
+      }
+
+      .letraItalic {
+        font-style: italic;
+        color: maroon;
+      }
+
+      .letraBlancas {
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .fondoAzul {
+        background-color: blue;
+      }
+      .letraGrande {
+        font-size: large;
+      }
+      .letraXpeque {
+        font-size: x-small;
+        background-color: beige;
+      }
+      .letraCafé {
+        color: brown;
+      }
+      .fondoParrafo {
+        background-color: burlywood;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-1">
+          <header>
+            <h1 class="rojo">Hola!</h1>
+          </header>
+        </div>
+      </div>
+      <div class="row">
+        <main>
+          <div class="row">
+            <div class="col-2">
+              <p class="letraParrafo2">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
+                vel iure, at cum inventore nisi totam tenetur ab molestiae.
+                Inventore repudiandae maiores eligendi aliquid quo, id soluta
+                mollitia consequuntur fugit.
+              </p>
+            </div>
+            <div class="col-8">
+              <p class="fondoAzul letraBlancas letraGrande">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+                minus a error explicabo ipsum magnam praesentium officia
+                quaerat? A repellendus, exercitationem repudiandae ipsum quae
+                similique debitis architecto voluptate amet consequuntur.
+              </p>
+            </div>
+            <div class="col-2">
+              <p class="letraXpeque letraCafé fondoParrafo">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+                minus a error explicabo ipsum magnam praesentium officia
+                quaerat? A repellendus, exercitationem repudiandae ipsum quae
+                similique debitis architecto voluptate amet consequuntur.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Mario</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Isaac</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Mario Alberto</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-4"></div>
+          </div>
+        </main>
+        <footer>
+          <!-- place footer here -->
+          <p class="fondoAzul letraBlanca letraPeque">
+            &copy; 2026 Jean Carlos Moreno.
+          </p>
+        </footer>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
