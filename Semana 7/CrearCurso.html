@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="navId" role="tablist">
+      <li class="nav-item">
+        <a
+          href="#tab1Id"
+          class="nav-link active"
+          data-bs-toggle="tab"
+          aria-current="page"
+          >Active</a
+        >
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          data-bs-toggle="dropdown"
+          href="#"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >Dropdown</a
+        >
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#tab2Id">Action</a>
+          <a class="dropdown-item" href="#tab3Id">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#tab4Id">Action</a>
+        </div>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a href="#tab5Id" class="nav-link" data-bs-toggle="tab">Another link</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a href="#" class="nav-link disabled" data-bs-toggle="tab">Disabled</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+    </div>
+
+    <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
+    <script>
+      var triggerEl = document.querySelector("#navId a");
+      bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
+    </script>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-12">
+          <header>
+            <h1>Formularios Crear Curso - post</h1>
+          </header>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <form
+            action="https://paginas-web-cr.com/Api/form/crearcurso.php"
+            method="post"
+          >
+            <!-- nombre
+descripcion
+tiempo
+usuario
+return_url -->
+
+            <!-- <label for="">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required /> -->
+            <div class="mb-3">
+              <label for="" class="form-label">nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                name="nombre"
+                id="nombre"
+                aria-describedby="helpId"
+                placeholder="ingrese aca su nombre"
+                required
+              />
+              <small id="helpId" class="form-text text-body-secondary"
+                >Help text nombre</small
+              >
+            </div>
+
+            <!-- <label for="">descripcion</label>
+            <input type="text" id="descripcion" name="descripcion" required /> -->
+            <div class="mb-3">
+              <label for="" class="form-label">descripcion</label>
+              <input
+                type="text"
+                class="form-control"
+                name="descripcion"
+                id="descripcion"
+                aria-describedby="helpId"
+                placeholder="descripcion"
+              />
+              <small id="helpId" class="form-text text-body-secondary"
+                >Help text descripcion</small
+              >
+            </div>
+
+            <!-- <label for="">tiempo</label>
+            <input type="text" id="tiempo" name="tiempo" required /> -->
+            <div class="mb-3">
+              <label for="" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                name=""
+                id=""
+                aria-describedby="helpId"
+                placeholder=""
+              />
+              <small id="helpId" class="form-text text-body-secondary"
+                >Help text</small
+              >
+            </div>
+            <!-- 
+            <label for="">usuario</label>
+            <input type="text" id="usuario" name="usuario" required /> -->
+            <div class="mb-3">
+              <label for="" class="form-label">usuario</label>
+              <input
+                type="text"
+                class="form-control"
+                name="usuario"
+                id="usuario"
+                aria-describedby="helpId"
+                placeholder="usuario"
+              />
+              <small id="helpId" class="form-text text-body-secondary"
+                >Help text usuario</small
+              >
+            </div>
+            <!-- <label for="">return_url</label>
+            <input type="text" id="return_url" name="return_url" required /> -->
+            <div class="mb-3">
+              <label for="" class="form-label">return_url</label>
+              <input
+                type="text"
+                class="form-control"
+                name="return_url"
+                id="return_url"
+                aria-describedby="helpId"
+                placeholder="return_url"
+              />
+              <small id="helpId" class="form-text text-body-secondary"
+                >Help text return_url</small
+              >
+            </div>
+
+            <div class="table-responsive">
+              <table class="table table-danger">
+                <thead>
+                  <tr>
+                    <th scope="col">Column 1</th>
+                    <th scope="col">Column 2</th>
+                    <th scope="col">Column 3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="">
+                    <td scope="row">R1C1</td>
+                    <td>R1C2</td>
+                    <td>R1C3</td>
+                  </tr>
+                  <tr class="">
+                    <td scope="row">Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <button type="submit">Enviar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+            <button type="reset">Reset</button>
+
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#modalId"
+            >
+              Launch
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modalId"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="modalTitleId"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">Add rows here</div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <script>
+              var modalId = document.getElementById("modalId");
+
+              modalId.addEventListener("show.bs.modal", function (event) {
+                // Button that triggered the modal
+                let button = event.relatedTarget;
+                // Extract info from data-bs-* attributes
+                let recipient = button.getAttribute("data-bs-whatever");
+
+                // Use above variables to manipulate the DOM
+              });
+            </script>
+          </form>
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-12 fondoCyan">
+          <footer>
+            <h3>Sitio de la UCenfotec</h3>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
