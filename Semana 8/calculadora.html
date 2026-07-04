@@ -1,0 +1,196 @@
+<!-- html5 -->
+<!-- botonera -->
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <title>Calculadora</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS v5.3.8 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Calculadora web</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row justify-content-center align-items-center g-2">
+          <div class="col">
+            <div class="mb-3">
+              <label for="" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                name="valorInicial"
+                id="valorInicial"
+                aria-describedby="helpId"
+                placeholder=""
+              />
+              <small id="helpId" class="form-text text-body-secondary"
+                >Help text valorInicial</small
+              >
+            </div>
+          </div>
+          <div class="col">
+            <div class="mb-3">
+              <label for="" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                name="valorFinal"
+                id="valorFinal"
+                aria-describedby="helpId"
+                placeholder=""
+              />
+              <small id="helpId" class="form-text text-body-secondary"
+                >Help text valorFinal</small
+              >
+            </div>
+          </div>
+          <div class="col">
+            <a
+              onclick="mostrarConsola()"
+              id=""
+              class="btn btn-primary"
+              href="#"
+              role="button"
+              >Mostrar en consola</a
+            >
+          </div>
+          <div class="col">
+            <a
+              onclick="mostrarVentana()"
+              name=""
+              id=""
+              class="btn btn-dark"
+              href="#"
+              role="button"
+              >Mostrar en ventana</a
+            >
+          </div>
+          <div class="col">
+            <a
+              onclick="mostrarInput()"
+              name=""
+              id=""
+              class="btn btn-light"
+              href="#"
+              role="button"
+              >Mostrar en input</a
+            >
+          </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center g-2">
+          <div class="col">
+            <div class="mb-3">
+              <label for="" class="form-label">numero 1</label>
+              <input
+                type="number"
+                class="form-control"
+                name="numero1"
+                id="numero1"
+                aria-describedby="helpId"
+                placeholder="ingrese numero 1"
+              />
+              <small id="helpId" class="form-text text-body-secondary"
+                >Help text numero 1</small
+              >
+            </div>
+          </div>
+          <div class="col">
+            <label for="" class="form-label">numero 2</label>
+            <input
+              type="number"
+              class="form-control"
+              name="numero2"
+              id="numero2"
+              aria-describedby="helpId"
+              placeholder="ingrese numero 2"
+            />
+            <small id="helpId" class="form-text text-body-secondary"
+              >Help text numero 2</small
+            >
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center g-2">
+          <div class="col">
+            <div class="mb-3">
+              <label for="" class="form-label">Resultado</label>
+              <input
+                type="text"
+                class="form-control"
+                name="resultado"
+                id="resultado"
+                aria-describedby="helpId"
+                placeholder="Resultado"
+              />
+              <small id="helpId" class="form-text text-body-secondary"
+                >Su resultado</small
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center g-2">
+          <div class="col">
+            <a name="" id="" class="btn btn-primary" href="#" role="button"
+              >Suma</a
+            >
+          </div>
+          <div class="col">
+            <a name="" id="" class="btn btn-danger" href="#" role="button"
+              >Resta</a
+            >
+          </div>
+          <div class="col">
+            <a name="" id="" class="btn btn-success" href="#" role="button"
+              >Multiplicar</a
+            >
+          </div>
+          <div class="col">
+            <a name="" id="" class="btn btn-warning" href="#" role="button"
+              >Dividir</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function mostrarConsola() {
+        console.log("Saludos clase");
+      }
+
+      function mostrarVentana() {
+        alert("Saludos clase");
+      }
+      function mostrarInput() {
+        let valorInicial = document.getElementById("valorInicial").value;
+
+        document.getElementById("valorFinal").value = valorInicial;
+        // valorFinal;
+        // capturamos un valor
+        // mostramos en otro lado el valor
+      }
+    </script>
+  </body>
+</html>
