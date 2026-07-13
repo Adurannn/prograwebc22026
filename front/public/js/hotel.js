@@ -29,13 +29,21 @@ function pintarTabla(dataLista) {
           <tr class="table-primary">
                   <td scope="row">${elementoIndividual.id}</td>
                   <td>${elementoIndividual.nombre}</td>
+                  <td>${elementoIndividual.descripcion}</td>
+                  <td>${elementoIndividual.telefono}</td>
                   <td>${elementoIndividual.correo}</td>
+                  <td>${elementoIndividual.sitio_web}</td>
+                  <td>${elementoIndividual.usuario}</td>
+                  <td>${elementoIndividual.fecha_creacion}</td>
+                  <td>${elementoIndividual.estado}</td>
                 </tr>
         `;
 
         baseTabla.innerHTML += fila;
 
     });
+
+    // npm install
     // id = 0,
     // nombre = "",
     // descripcion = "",
