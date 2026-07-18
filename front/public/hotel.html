@@ -21,38 +21,200 @@
     <div class="container">
       <header>
         <h1>Hoteles</h1>
+        <div id="baseMenu"></div>
       </header>
       <main>
         <div class="container">
-          <div class="table-responsive">
-            <table
-              class="table table-striped table-hover table-borderless table-primary align-middle"
-            >
-              <thead class="table-light">
-                <caption>
-                  Table Name
-                </caption>
-                <tr>
-                  <th scope="row">id</th>
-                  <th>nombre</th>
-                  <th>descripcion</th>
-                  <th>telefono</th>
-                  <th>correo</th>
-                  <th>sitio_web</th>
-                  <th>usuario</th>
-                  <th>fecha_creacion</th>
-                  <th>estado</th>
-                </tr>
-              </thead>
-              <tbody class="table-group-divider" id="baseTabla"></tbody>
-              <tfoot></tfoot>
-            </table>
+          <div class="row justify-content-center align-items-center g-2">
+            <div class="col">
+              <!-- Modal trigger button -->
+              <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#modalId"
+              >
+                Launch
+              </button>
+            </div>
+          </div>
+
+          <div class="row justify-content-center align-items-center g-2">
+            <div class="col">
+              <div class="table-responsive">
+                <table
+                  class="table table-striped table-hover table-borderless table-primary align-middle"
+                >
+                  <thead class="table-light">
+                    <caption>
+                      Table Name
+                    </caption>
+                    <tr>
+                      <th>Acciones</th>
+                      <th scope="row">id</th>
+                      <th>nombre</th>
+                      <th>descripcion</th>
+                      <th>telefono</th>
+                      <th>correo</th>
+                      <th>sitio_web</th>
+                      <th>usuario</th>
+                      <th>fecha_creacion</th>
+                      <th>estado</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-group-divider" id="baseTabla"></tbody>
+                  <tfoot></tfoot>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </main>
       <footer>
         <!-- place footer here -->
       </footer>
+
+      <!-- seccion de modals -->
+
+      <!-- Modal Body -->
+      <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+      <div
+        class="modal fade"
+        id="modalHotel"
+        tabindex="-1"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        role="dialog"
+        aria-labelledby="modalTitleId"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalTitleId">Crear Hotel</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="" class="form-label">id</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="id"
+                  id="id"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+                <small id="helpId" class="form-text text-body-secondary"
+                  >Help text id</small
+                >
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="nombre"
+                  id="nombre"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+                <small id="helpId" class="form-text text-body-secondary"
+                  >Help text nombre</small
+                >
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">descripcion</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="descripcion"
+                  id="descripcion"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+                <small id="helpId" class="form-text text-body-secondary"
+                  >Help text</small
+                >
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">telefono</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="telefono"
+                  id="telefono"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+                <small id="helpId" class="form-text text-body-secondary"
+                  >Help text telefono</small
+                >
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">correo</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="correo"
+                  id="correo"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+                <small id="helpId" class="form-text text-body-secondary"
+                  >Help text</small
+                >
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">sitio_web</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="sitio_web"
+                  id="sitio_web"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+                <small id="helpId" class="form-text text-body-secondary"
+                  >Help text</small
+                >
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">estado</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="estado"
+                  id="estado"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+                <small id="helpId" class="form-text text-body-secondary"
+                  >Help text estado</small
+                >
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Bootstrap JavaScript Bundle (includes Popper) -->
@@ -65,5 +227,6 @@
     <script src="js/models/hotelModel.js"></script>
     <script src="js/hotel.js"></script> -->
     <script type="module" src="js/hotel.js"></script>
+    <script type="module" src="js/menu.js"></script>
   </body>
 </html>
